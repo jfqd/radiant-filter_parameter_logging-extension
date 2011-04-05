@@ -10,7 +10,7 @@ class FilterParameterLoggingExtension < Radiant::Extension
     ApplicationController.class_eval do
       filter_parameter_logging :username_or_email, :password, :password_confirmation,
                                :name, :email, :login, :authenticity_token, :content,
-                               :published_at, :title, :caption
+                               :published_at, :title, :caption, :description, :message
     end
   end
   
